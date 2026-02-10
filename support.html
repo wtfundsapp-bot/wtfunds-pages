@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WTFunds — Support / Suporte</title>
+  <meta name="description" content="Support page for WTFunds - Where The Funds." />
+  <style>
+    :root{
+      color-scheme: light dark;
+      --purple-dark:#1A0648;
+      --green-neon:#CDF73F;
+      --green-bright:#6DE32F;
+      --green-mid:#24A42F;
+      --green-dark:#105031;
+      --text:#ffffff;
+      --muted:rgba(255,255,255,.82);
+      --border:rgba(255,255,255,.18);
+      --card:rgba(255,255,255,.06);
+      --shadow:0 10px 30px rgba(0,0,0,.25);
+      --radius:16px;
+    }
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      line-height:1.6;
+      color:var(--text);
+      background:linear-gradient(180deg,#0f0729 0%, var(--purple-dark) 100%);
+    }
+    header, main, footer{ max-width:920px; margin:0 auto; padding:20px; }
+    header{ border-bottom:1px solid var(--border); }
+    h1{ margin:0; font-size:1.55rem; color:var(--green-neon); }
+    .meta{ margin:6px 0 0; color:var(--muted); }
+    nav{ display:flex; gap:10px; flex-wrap:wrap; margin-top:14px; }
+    a.navlink{
+      text-decoration:none; color:var(--text);
+      border:1px solid var(--green-dark);
+      padding:8px 12px; border-radius:12px; font-weight:650;
+      background:rgba(0,0,0,.10);
+    }
+    a.navlink:hover{ border-color:var(--green-neon); }
+    .tabs{ display:flex; gap:10px; flex-wrap:wrap; margin-top:14px; }
+    .tabs button{
+      border:1px solid var(--green-dark);
+      background:transparent; color:var(--text);
+      padding:8px 12px; border-radius:12px;
+      cursor:pointer; font-weight:700;
+    }
+    .tabs button[aria-pressed="true"]{
+      background:var(--green-mid); color:#000; border-color:var(--green-neon);
+    }
+    .card{
+      margin-top:20px; background:var(--card);
+      border:1px solid var(--border); border-radius:var(--radius);
+      padding:20px; box-shadow:var(--shadow);
+    }
+    h2{ margin:0 0 10px; font-size:1.2rem; color:var(--green-bright); }
+    h3{ margin:18px 0 8px; font-size:1.05rem; color:var(--green-neon); }
+    .lang{ display:none; }
+    .lang.active{ display:block; }
+    .email{
+      color:var(--green-neon);
+      font-weight:800;
+      text-decoration:none;
+      border-bottom:1px dashed rgba(205,247,63,.55);
+    }
+    .email:hover{ border-bottom-color:var(--green-neon); }
+    code{
+      background:rgba(0,0,0,.25);
+      border:1px solid var(--border);
+      padding:2px 8px;
+      border-radius:10px;
+    }
+    footer{ border-top:1px solid var(--border); color:var(--muted); font-size:.95rem; }
+  </style>
+</head>
+
+<body>
+<header>
+  <h1>Support / Suporte</h1>
+  <p class="meta">WTFunds — Where The Funds</p>
+
+  <nav aria-label="Site navigation">
+    <a class="navlink" href="index.html">Privacy</a>
+    <a class="navlink" href="terms.html">Terms</a>
+    <a class="navlink" href="support.html">Support</a>
+  </nav>
+
+  <div class="tabs" role="tablist" aria-label="Language switch">
+    <button id="btn-both" type="button" aria-pressed="true">PT + EN</button>
+    <button id="btn-pt" type="button" aria-pressed="false">Português</button>
+    <button id="btn-en" type="button" aria-pressed="false">English</button>
+  </div>
+</header>
+
+<main>
+  <div id="view-both" class="lang active">
+    <div class="card">
+      <h2>Suporte (Português)</h2>
+      <p>Precisa de ajuda com o <strong>WTFunds</strong>? Fale com a gente:</p>
+      <p><a class="email" href="mailto:wtfunds.app@gmail.com">wtfunds.app@gmail.com</a></p>
+
+      <h3>O que enviar no e-mail (para eu te ajudar mais rápido)</h3>
+      <ul>
+        <li>Modelo do aparelho (ex.: iPhone 14 / Pixel 7)</li>
+        <li>Versão do sistema (iOS/Android)</li>
+        <li>Versão do app</li>
+        <li>O que você tentou fazer e o que aconteceu</li>
+      </ul>
+
+      <h3>Privacidade</h3>
+      <p>Os dados são armazenados e processados localmente no seu dispositivo. Veja: <a class="email" href="index.html">Privacy Policy</a>.</p>
+    </div>
+
+    <div class="card">
+      <h2>Support (English)</h2>
+      <p>Need help with <strong>WTFunds</strong>? Contact:</p>
+      <p><a class="email" href="mailto:wtfunds.app@gmail.com">wtfunds.app@gmail.com</a></p>
+
+      <h3>What to include in your email (so I can help faster)</h3>
+      <ul>
+        <li>Device model (e.g., iPhone 14 / Pixel 7)</li>
+        <li>OS version (iOS/Android)</li>
+        <li>App version</li>
+        <li>What you tried to do and what happened</li>
+      </ul>
+
+      <h3>Privacy</h3>
+      <p>Data is stored and processed locally on your device. See: <a class="email" href="index.html">Privacy Policy</a>.</p>
+    </div>
+  </div>
+
+  <div id="view-pt" class="lang">
+    <div class="card">
+      <h2>Suporte</h2>
+      <p>E-mail: <a class="email" href="mailto:wtfunds.app@gmail.com">wtfunds.app@gmail.com</a></p>
+      <p>Inclua: aparelho, iOS/Android, versão do app e passos para reproduzir.</p>
+    </div>
+  </div>
+
+  <div id="view-en" class="lang">
+    <div class="card">
+      <h2>Support</h2>
+      <p>Email: <a class="email" href="mailto:wtfunds.app@gmail.com">wtfunds.app@gmail.com</a></p>
+      <p>Please include: device, OS, app version, and steps to reproduce.</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>© <span id="year"></span> WTFunds — Where The Funds</p>
+</footer>
+
+<script>
+  const btnBoth = document.getElementById('btn-both');
+  const btnPt = document.getElementById('btn-pt');
+  const btnEn = document.getElementById('btn-en');
+
+  const viewBoth = document.getElementById('view-both');
+  const viewPt = document.getElementById('view-pt');
+  const viewEn = document.getElementById('view-en');
+
+  function setPressed(active){
+    btnBoth.setAttribute('aria-pressed', active === 'both' ? 'true' : 'false');
+    btnPt.setAttribute('aria-pressed', active === 'pt' ? 'true' : 'false');
+    btnEn.setAttribute('aria-pressed', active === 'en' ? 'true' : 'false');
+  }
+  function show(which){
+    viewBoth.classList.toggle('active', which === 'both');
+    viewPt.classList.toggle('active', which === 'pt');
+    viewEn.classList.toggle('active', which === 'en');
+    setPressed(which);
+    const hash = which === 'both' ? '#both' : (which === 'pt' ? '#pt' : '#en');
+    history.replaceState(null, '', hash);
+  }
+  btnBoth.addEventListener('click', ()=>show('both'));
+  btnPt.addEventListener('click', ()=>show('pt'));
+  btnEn.addEventListener('click', ()=>show('en'));
+
+  const hash = (location.hash || '#both').toLowerCase();
+  if(hash === '#pt') show('pt');
+  else if(hash === '#en') show('en');
+  else show('both');
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
