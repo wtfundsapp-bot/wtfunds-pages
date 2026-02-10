@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WTFunds — Privacy Policy / Política de Privacidade</title>
+  <meta name="description" content="Privacy Policy / Política de Privacidade for WTFunds - Where The Funds." />
+  <style>
+    :root{
+      color-scheme: light dark;
+
+      /* WTFunds brand palette (from logo) */
+      --purple-dark:#1A0648;
+      --green-neon:#CDF73F;
+      --green-bright:#6DE32F;
+      --green-mid:#24A42F;
+      --green-dark:#105031;
+
+      --text:#ffffff;
+      --muted:rgba(255,255,255,.82);
+      --border:rgba(255,255,255,.18);
+      --card:rgba(255,255,255,.06);
+      --shadow:0 10px 30px rgba(0,0,0,.25);
+      --radius:16px;
+    }
+
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      line-height:1.6;
+      color:var(--text);
+      background:linear-gradient(180deg,#0f0729 0%, var(--purple-dark) 100%);
+    }
+
+    header, main, footer{
+      max-width:920px;
+      margin:0 auto;
+      padding:20px;
+    }
+
+    header{
+      border-bottom:1px solid var(--border);
+    }
+
+    .topbar{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:16px;
+      flex-wrap:wrap;
+    }
+
+    h1{
+      margin:0;
+      font-size:1.55rem;
+      color:var(--green-neon);
+      letter-spacing:.2px;
+    }
+
+    .meta{
+      margin:6px 0 0;
+      color:var(--muted);
+      font-size:.98rem;
+    }
+
+    nav{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      align-items:center;
+      margin-top:14px;
+    }
+
+    a.navlink{
+      text-decoration:none;
+      color:var(--text);
+      border:1px solid var(--green-dark);
+      padding:8px 12px;
+      border-radius:12px;
+      font-weight:650;
+      background:rgba(0,0,0,.10);
+    }
+    a.navlink:hover{ border-color:var(--green-neon); }
+
+    .tabs{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top:14px;
+    }
+    .tabs button{
+      border:1px solid var(--green-dark);
+      background:transparent;
+      color:var(--text);
+      padding:8px 12px;
+      border-radius:12px;
+      cursor:pointer;
+      font-weight:700;
+    }
+    .tabs button[aria-pressed="true"]{
+      background:var(--green-mid);
+      color:#000;
+      border-color:var(--green-neon);
+    }
+
+    .card{
+      margin-top:20px;
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      padding:20px;
+      box-shadow:var(--shadow);
+    }
+
+    h2{ margin:0 0 10px; font-size:1.2rem; color:var(--green-bright); }
+    h3{ margin:18px 0 8px; font-size:1.05rem; color:var(--green-neon); }
+
+    p{ margin:10px 0; }
+    ul{ margin:8px 0 0 18px; }
+    li{ margin:6px 0; }
+
+    .muted{ color:var(--muted); }
+    .pill{
+      display:inline-block;
+      border:1px solid var(--border);
+      border-radius:999px;
+      padding:2px 10px;
+      font-size:.92rem;
+      color:var(--muted);
+    }
+
+    .lang{ display:none; }
+    .lang.active{ display:block; }
+
+    footer{
+      border-top:1px solid var(--border);
+      color:var(--muted);
+      font-size:.95rem;
+    }
+
+    .contact{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
+    }
+    .email{
+      color:var(--green-neon);
+      font-weight:750;
+      text-decoration:none;
+      border-bottom:1px dashed rgba(205,247,63,.55);
+    }
+    .email:hover{ border-bottom-color:var(--green-neon); }
+  </style>
+</head>
+
+<body>
+<header>
+  <div class="topbar">
+    <div>
+      <h1>Privacy Policy / Política de Privacidade</h1>
+      <p class="meta">
+        App: <strong>WTFunds — Where The Funds</strong><br />
+        <span class="pill">Last updated / Última atualização: February 10, 2026</span>
+      </p>
+    </div>
+
+    <nav aria-label="Site navigation">
+      <a class="navlink" href="index.html">Privacy</a>
+      <a class="navlink" href="terms.html">Terms</a>
+      <a class="navlink" href="support.html">Support</a>
+    </nav>
+  </div>
+
+  <div class="tabs" role="tablist" aria-label="Language switch">
+    <button id="btn-both" type="button" aria-pressed="true">PT + EN</button>
+    <button id="btn-pt" type="button" aria-pressed="false">Português</button>
+    <button id="btn-en" type="button" aria-pressed="false">English</button>
+  </div>
+</header>
+
+<main>
+  <!-- BOTH -->
+  <div id="view-both" class="lang active">
+    <div class="card">
+      <h2>Política de Privacidade (Português)</h2>
+      <p><strong>Resumo:</strong> o WTFunds funciona localmente. Seus dados ficam no seu dispositivo.</p>
+
+      <h3>1. Informações coletadas</h3>
+      <p>O aplicativo <strong>não coleta informações pessoais identificáveis</strong>.</p>
+      <p>Os dados inseridos pelo usuário (ex.: despesas, datas, categorias e observações) são fornecidos voluntariamente para uso dentro do app.</p>
+
+      <h3>2. Armazenamento e processamento</h3>
+      <ul>
+        <li>Armazenamento: <strong>somente no dispositivo</strong></li>
+        <li>Processamento: <strong>local</strong></li>
+        <li>Não enviamos dados para servidores externos</li>
+        <li>Não compartilhamos dados com terceiros</li>
+      </ul>
+
+      <h3>3. Login e contas</h3>
+      <p>O aplicativo <strong>não possui login</strong> e <strong>não cria contas de usuário</strong>.</p>
+
+      <h3>4. Compartilhamento de dados</h3>
+      <p>O aplicativo <strong>não compartilha</strong> dados com terceiros, serviços externos ou parceiros.</p>
+
+      <h3>5. Permissões</h3>
+      <p>O aplicativo não solicita permissões sensíveis (contatos, localização, câmera, microfone).</p>
+
+      <h3>6. Segurança</h3>
+      <p>Como os dados permanecem no dispositivo, a segurança depende das proteções do próprio sistema (como bloqueio de tela e criptografia).</p>
+
+      <h3>7. Serviços de terceiros</h3>
+      <p>O aplicativo <strong>não utiliza SDKs de terceiros</strong> para coleta de dados, publicidade ou analytics comportamental.</p>
+
+      <h3>8. Crianças</h3>
+      <p>O aplicativo não é direcionado especificamente a crianças e <strong>não coleta dados de menores</strong>.</p>
+
+      <h3>9. Alterações nesta política</h3>
+      <p>Podemos atualizar esta Política de Privacidade. Se houver mudanças relevantes, a versão atualizada será publicada nesta página.</p>
+
+      <h3>10. Contato</h3>
+      <div class="contact">
+        <span>Dúvidas?</span>
+        <a class="email" href="mailto:wtfunds.app@gmail.com">wtfunds.app@gmail.com</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Privacy Policy (English)</h2>
+      <p><strong>Summary:</strong> WTFunds works locally. Your data stays on your device.</p>
+
+      <h3>1. Information we collect</h3>
+      <p>The app <strong>does not collect personally identifiable information</strong>.</p>
+      <p>Any data entered by the user (e.g., expenses, dates, categories, notes) is voluntarily provided for use within the app.</p>
+
+      <h3>2. Data storage and processing</h3>
+      <ul>
+        <li>Storage: <strong>on-device only</strong></li>
+        <li>Processing: <strong>local</strong></li>
+        <li>No data is sent to external servers</li>
+        <li>No data is shared with third parties</li>
+      </ul>
+
+      <h3>3. Accounts and login</h3>
+      <p>The app <strong>does not have a login system</strong> and <strong>does not create user accounts</strong>.</p>
+
+      <h3>4. Data sharing</h3>
+      <p>The app <strong>does not share</strong> data with third parties, external services, or partners.</p>
+
+      <h3>5. Permissions</h3>
+      <p>The app does not request sensitive permissions (contacts, location, camera, microphone).</p>
+
+      <h3>6. Security</h3>
+      <p>Because data stays on the device, security depends on your device protections (such as screen lock and encryption).</p>
+
+      <h3>7. Third-party services</h3>
+      <p>The app <strong>does not use third-party SDKs</strong> for data collection, advertising, or behavioral analytics.</p>
+
+      <h3>8. Children</h3>
+      <p>The app is not specifically directed to children and <strong>does not knowingly collect data from minors</strong>.</p>
+
+      <h3>9. Changes to this policy</h3>
+      <p>This policy may be updated. If there are relevant changes, the updated version will be posted on this page.</p>
+
+      <h3>10. Contact</h3>
+      <div class="contact">
+        <span>Questions?</span>
+        <a class="email" href="mailto:wtfunds.app@gmail.com">wtfunds.app@gmail.com</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- PT -->
+  <div id="view-pt" class="lang">
+    <div class="card">
+      <h2>Política de Privacidade</h2>
+      <p class="muted"><strong>Última atualização:</strong> 10 de fevereiro de 2026</p>
+      <p>O WTFunds funciona localmente. Seus dados ficam no seu dispositivo.</p>
+
+      <h3>1. Informações coletadas</h3>
+      <p>O aplicativo não coleta informações pessoais identificáveis.</p>
+
+      <h3>2. Armazenamento e processamento</h3>
+      <ul>
+        <li>Armazenamento: somente no dispositivo</li>
+        <li>Processamento: local</li>
+        <li>Sem envio para servidores externos</li>
+        <li>Sem compartilhamento com terceiros</li>
+      </ul>
+
+      <h3>3. Login e contas</h3>
+      <p>Sem login e sem criação de conta.</p>
+
+      <h3>4. Permissões</h3>
+      <p>Sem permissões sensíveis (contatos, localização, câmera, microfone).</p>
+
+      <h3>5. Contato</h3>
+      <a class="email" href="mailto:wtfunds.app@gmail.com">wtfunds.app@gmail.com</a>
+    </div>
+  </div>
+
+  <!-- EN -->
+  <div id="view-en" class="lang">
+    <div class="card">
+      <h2>Privacy Policy</h2>
+      <p class="muted"><strong>Last updated:</strong> February 10, 2026</p>
+      <p>WTFunds works locally. Your data stays on your device.</p>
+
+      <h3>1. Information we collect</h3>
+      <p>The app does not collect personally identifiable information.</p>
+
+      <h3>2. Data storage and processing</h3>
+      <ul>
+        <li>Storage: on-device only</li>
+        <li>Processing: local</li>
+        <li>No external servers</li>
+        <li>No third-party sharing</li>
+      </ul>
+
+      <h3>3. Accounts and login</h3>
+      <p>No login and no user accounts.</p>
+
+      <h3>4. Permissions</h3>
+      <p>No sensitive permissions (contacts, location, camera, microphone).</p>
+
+      <h3>5. Contact</h3>
+      <a class="email" href="mailto:wtfunds.app@gmail.com">wtfunds.app@gmail.com</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>© <span id="year"></span> WTFunds — Where The Funds</p>
+</footer>
+
+<script>
+  const btnBoth = document.getElementById('btn-both');
+  const btnPt = document.getElementById('btn-pt');
+  const btnEn = document.getElementById('btn-en');
+
+  const viewBoth = document.getElementById('view-both');
+  const viewPt = document.getElementById('view-pt');
+  const viewEn = document.getElementById('view-en');
+
+  function setPressed(active){
+    btnBoth.setAttribute('aria-pressed', active === 'both' ? 'true' : 'false');
+    btnPt.setAttribute('aria-pressed', active === 'pt' ? 'true' : 'false');
+    btnEn.setAttribute('aria-pressed', active === 'en' ? 'true' : 'false');
+  }
+
+  function show(which){
+    viewBoth.classList.toggle('active', which === 'both');
+    viewPt.classList.toggle('active', which === 'pt');
+    viewEn.classList.toggle('active', which === 'en');
+    setPressed(which);
+    const hash = which === 'both' ? '#both' : (which === 'pt' ? '#pt' : '#en');
+    history.replaceState(null, '', hash);
+  }
+
+  btnBoth.addEventListener('click', ()=>show('both'));
+  btnPt.addEventListener('click', ()=>show('pt'));
+  btnEn.addEventListener('click', ()=>show('en'));
+
+  const hash = (location.hash || '#both').toLowerCase();
+  if(hash === '#pt') show('pt');
+  else if(hash === '#en') show('en');
+  else show('both');
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
